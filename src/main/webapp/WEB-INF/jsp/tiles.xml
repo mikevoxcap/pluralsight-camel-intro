@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	
+	<definition name="page" templateExpression="/WEB-INF/jsp/page.jsp">
+		<put-attribute name="header" expression="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="footer" expression="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	<definition name="orderHome" extends="page">
+        <put-attribute name="content" value="/WEB-INF/jsp/orderHome.jsp" />
+    </definition>
+
+	<definition name="viewOrders" extends="page">
+        <put-attribute name="content" value="/WEB-INF/jsp/viewOrders.jsp" />
+    </definition>
+
+	<definition name="processOrders" extends="page">
+        <put-attribute name="content" value="/WEB-INF/jsp/processOrders.jsp" />
+    </definition>
+	
+	<definition name="resetOrders" extends="page">
+        <put-attribute name="content" value="/WEB-INF/jsp/resetOrders.jsp" />
+    </definition>
+	
+</tiles-definitions>
