@@ -14,7 +14,7 @@ import com.pluralsight.orderfulfillment.customer.*;
  * 
  */
 @Entity
-@Table(name = "order")
+@Table(name = "orderType")
 @SequenceGenerator(name = "order_id_seq", sequenceName = "order_id_seq")
 public class OrderEntity implements Serializable {
 
