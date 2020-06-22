@@ -5,11 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
 	<repositories>
-		<repository>
-			<id>central</id>
-			<url>http://central.maven.org/maven2/</url>
-		</repository>
- 	</repositories>
+        <repository>
+            <id>central</id>
+                <name>Central Repository</name>
+                <url>https://repo.maven.apache.org/maven2</url>
+                <layout>default</layout>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+        </repository>
+    </repositories>
 
 	<groupId>com.pluralsight.camel</groupId>
 	<artifactId>order-fulfillment-processor</artifactId>
@@ -398,4 +403,18 @@
 		</pluginManagement>
 		<finalName>ofp</finalName>
     </build>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
